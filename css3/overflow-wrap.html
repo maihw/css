@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>overflow-wrap</title>
+        <style type='text/css'>
+            .div1 {
+                margin: 50px;
+                border: 1px solid;
+                width: 100px;
+                overflow-wrap: break-word;
+            }
+            .div2 {
+                margin: 50px;
+                border: 1px solid;
+                width: 100px;
+                overflow-wrap: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='div1'>Hello world!veryveryveryveryverylongword isn't it?</div>
+        <div class='div2'>Hello world!veryveryveryveryverylongword isn't it?</div>
+    </body>
+</html>

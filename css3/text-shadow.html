@@ -1,0 +1,39 @@
+<!DOCTYPE type>
+<html>
+    <head>
+        <title>text-shadow</title>
+        <style type='text/css'>
+            .shadow1 {
+                margin: 50px;
+                color: green;
+                text-shadow: 20px 20px 3px #000;
+            }
+            .shadow2 {
+                margin: 50px;
+                color: green;
+                text-shadow: -20px -20px 7px #000;
+            }
+            .shadow3 {
+                margin: 50px;
+                color: green;
+                text-shadow: 0 0 50px #000;
+            }
+            .shadow4 {
+                margin: 50px;
+                color: green;
+                text-shadow: -40px 0 10px red,
+                0 -40px 10px #000,
+                40px 0 10px blue,
+                0 40px 10px yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class='shadow1'>水平和垂直阴影都为正值，阴影呈现在原文本右下方</h1>
+        <h1 class="shadow2">水平和垂直阴影都为负值，阴影呈现在原文本左上方</h1>
+        <h1 class="shadow3">
+            没有设置水平与垂直阴影，阴影扩散的范围就是模糊半径的范围
+        </h1>
+        <h1 class="shadow4">多阴影，设置了上下左右四个边的阴影</h1>
+    </body>
+</html>

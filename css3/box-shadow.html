@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>css3 box-shadow</title>
+        <style type='text/css'>
+            .shadow1 {
+                float: left;
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: #eee8cd;
+                box-shadow: 0 0 0 10px #000;
+            }
+            .shadow2 {
+                float: left;
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: #eee8cd;
+                box-shadow: 20px 20px 10px #000;
+            }
+            .shadow3 {
+                float: left;
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: #eee8cd;
+                box-shadow: -20px -20px 10px #000;
+            }
+            .shadow4 {
+                float: left;
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: #eee8cd;
+                box-shadow: 0 0 100px #000 inset;
+            }
+            .shadow5 {
+                float: left;
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: #eee8cd;
+                box-shadow: -40px 0 100px red, 0 -40px 100px #000,
+                40px 0 100px blue, 0 40px 100px yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='shadow1'>
+            将除阴影尺寸之外的数值都设置为0，可以看到阴影尺寸就是阴影外延出去的长度，相当于增加了
+      border 的宽度。需要注意的是，box-shadow 不占据空间，所以阴影尺寸虽然增加了
+      border 的宽度，但它并不是 border。
+        </div>
+        <div class='shadow2'>水平阴影和垂直阴影都为正值，阴影在原盒子右下方</div>
+        <div class='shadow3'>水平阴影和垂直阴影都为负值，阴影在原盒子左上方</div>
+        <div class='shadow4'>
+            除了模糊阴影外的值都设置为 0 ，另外使用参数 inset ，阴影在盒子内部
+        </div>
+        <div class='shadow5'>盒子的多阴影，设置了上下左右四个阴影</div>
+    </body>
+</html>
