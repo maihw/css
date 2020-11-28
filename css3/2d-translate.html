@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>2d-translate</title>
+        <style type='text/css'>
+            .div1 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: lightgreen;
+                opacity: 0.5;
+                transition: 2s;
+            }
+            .div1:hover {
+                transform: translate(30px, 40px);
+                opacity: 1;
+            }
+            .div2 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: cyan;
+                opacity: 0.5;
+                transition: 2s;
+            }
+            .div2:hover {
+                transform: rotate(180deg);
+                opacity: 1;
+            }
+            .div3 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                opacity: 0.5;
+                transition: 2s;
+            }
+            .div3:hover {
+                transform: skew(20deg, 30deg);
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='div1'>div1</div>
+        <div class='div2'>div2</div>
+        <div class='div3'>div3</div>
+    </body>
+</html>

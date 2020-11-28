@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>linear-gradient</title>
+        <style type='text/css'>
+            #box1 {
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(#e66465, #9198e5);
+            }
+            #box2 {
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to right, #e66465, #9198e5);
+            }
+            #box3 {
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                background-image: linear-gradient(to bottom right, red, yellow);
+            }
+            #box4 {
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                background-image: radial-gradient(
+                    red,
+                    yellow,
+                    blue
+                );
+            }
+            #box5 {
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                background-image: radial-gradient(
+                    red 25%, yellow 35%, pink 60%
+                );
+            }
+            #box6 {
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                background-image: radial-gradient(circle, red 25%,
+                yellow 35%, pink 60%);
+            }
+        </style>
+    </head>
+    <body>
+        <p>从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
+        <div id='box1'></div>
+        <p>从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
+        <div id='box2'></div>
+        <p>从顶部开始的线性渐变。起点是红色，慢慢过渡到黄色：</p>
+        <div id='box3'></div>
+        <p>径向渐变。起点是红色，慢慢向黄蓝色渐变：</p>
+        <div id='box4'></div>
+        <p>径向渐变，颜色结点不均匀分布</p>
+        <div id='box5'></div>
+        <p>设置形状</p>
+        <div id='box6'></div>
+    </body>
+</html>

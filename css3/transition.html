@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>transition</title>
+        <style type='text/css'>
+            .div1 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: lightgreen;
+                opacity: 0.5;
+                transition: 2s ease-in-out;
+            }
+            .div1:hover {
+                width: 400px;
+                height: 400px;
+                opacity: 1;
+            }
+            .div2 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: cyan;
+                opacity: 0.5;
+                transition: height 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+            }
+            .div2:hover {
+                width: 400px;
+                height: 400;
+                opacity: 1;
+            }
+            .div3 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                opacity: 0.5;
+                transition: 2s ease-in-out 2s;
+            }
+            .div3:hover {
+                width: 400px;
+                height: 400px;
+                opacity: 1;
+            }
+            .div4 {
+                margin: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: grey;
+                opacity: 0.5;
+                transition: ;
+            }
+            .div4:hover {
+                width: 400px;
+                height: 400px;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='div1'>div1 transition: 2s ease-in-out;</div>
+        <div class='div2'>div2 transition: height 2s cubic-bezier(0.25,0.1,0.25,1);</div>
+        <div class='div3'>div3 transition: 2s ease-in-out 2s;</div>
+        <div class='div4'>div4 transition: ;</div>
+    </body>
+</html>

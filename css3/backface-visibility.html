@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>shiyanlou</title>
+    <style type="text/css">
+      div {
+        width: 200px;
+        height: 200px;
+        background: lightgreen;
+        transform: rotateY(180deg);
+        /* 将 div 元素都翻转 180deg，翻转到背面 */
+      }
+      .div1 {
+        backface-visibility: hidden;
+      }
+      .div2 {
+        backface-visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">div1 backface-visibility: hidden;</div>
+    <div class="div2">div2 backface-visibility: visible;</div>
+  </body>
+</html>

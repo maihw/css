@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>实验楼</title>
+    <style>
+      #box1 {
+        width: 300px;
+        height: 200px;
+        background-color: red; /* 浏览器不支持的时候显示 */
+        background-image: radial-gradient(
+          red,
+          yellow,
+          blue
+        ); /*  标准的语法（必须放在最后）*/
+      }
+    </style>
+  </head>
+  <body>
+    <p>从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
+
+    <div id="box1"></div>
+  </body>
+</html>
